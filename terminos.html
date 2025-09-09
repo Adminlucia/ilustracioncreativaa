@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body class="pages-legales">
  
 <header>
   <div class="logo-text">
@@ -229,6 +229,14 @@ establecidas en la LOPD y normativa de desarrollo.</p>
     </div>
   </div>
   <br>
+  <script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
  <div class="footer-container">
     <!-- Links legales a la izquierda -->
     <div class="footer-links">
@@ -241,14 +249,7 @@ establecidas en la LOPD y normativa de desarrollo.</p>
     &copy; 2025 @ilustracioncreativa - Todos los derechos reservados.
   </div>
 </footer>
-<script>
-  const toggleBtn = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector("nav");
 
-  toggleBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-  });
-</script>
 
 
 </body>

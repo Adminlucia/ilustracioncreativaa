@@ -1498,3 +1498,11 @@ color:#a14946}
   }
 }
 
+.pages-legales main {
+    min-height: auto; /* ya no forzamos min-height */
+    padding-bottom: 40px; /* espacio extra para que no pise el footer */
+}
+
+.pages-legales footer {
+    position: relative; /* nos aseguramos de que no sea fijo */
+}
