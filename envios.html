@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ilustracioncreativa</title>
+    <link rel="icon" type="image/png" href="lineal/logo1.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+ 
+<header>
+  <div class="logo-text">
+    <a href="index.html">
+      <img src="lineal/Ilustración_sin_título (4).png" alt="Logo ilustración creativa" class="logo-image">
+    </a>
+    
+  </div>
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  <nav>
+      <ul> 
+          <li><a href="index.html"> <span class="material-symbols-outlined">home</span>Inicio</a></li>
+          <li class="dropdown">
+              <a href="#">Servicios y Productos<span class="material-symbols-outlined">stat_minus_1</span></a>
+              <ul class="dropdown-menu">
+                  <li class="submenu">
+                      <a href="#"><span class="material-symbols-outlined">chevron_backward </span>  Ilustraciones</a>
+                      <ul class="dropdown-submenu">
+                          <li><a href="ilustracionespersonalizadas.html">Ilustraciones <br>personalizadas</a></li>
+                          <li><a href="marcasitios.html">Marcasitios eventos</a></li>
+                          <li><a href="ilustracioneslineales.html">Ilustraciones lineales</a></li>
+                      </ul>
+                  </li>
+                  <li class="submenu">
+                      <a href="#"> <span class="material-symbols-outlined">chevron_backward </span>  Collages</a> 
+                      <ul class="dropdown-submenu">
+                          <li><a href="collagespersonalizados.html">Collages <br>Personalizados</a></li>
+                          <li><a href="collagescreativos.html">Collages Creativos</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="arteenvivo.html">Arte en Vivo</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html"> <span class="material-symbols-outlined">transcribe</span>  Contacto</a></li>
+      </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="legal-section">
+    <h2>Envíos y devoluciones</h2>
+
+    <p>
+      Las ilustraciones y/o collages personalizados son una libre interpretación de la
+      fotografía original enviada, por lo que no se garantiza que sea una reproducción exacta
+      de la persona o animales.
+    </p>
+
+    <p>
+      Con respecto a las ilustraciones digitales, solo se permiten dos pequeños cambios
+      siempre y cuando se especifique lo que hay que modificar. Bajo ningún concepto los
+      cambios incluirán el cambio de personas a dibujar, dibujarles con otra ropa o añadir
+      personas extras. Simplemente serán pequeños cambios que no alteran la ilustración
+      general.
+    </p>
+
+    <p>
+      Con respecto a los collages personalizados, se permiten unos primeros cambios cuando
+      se especifiquen en un primer email lo que hay que modificar. Bajo ningún concepto los
+      cambios incluirán modificar la foto principal. Simplemente serán pequeños cambios en
+      cuanto a modificar algún elemento (dos máximo). Si el cliente necesitase otra vez más
+      cambios, se procedería a abonar la cantidad de 10€.
+    </p>
+
+    <h3>Proceso de validación</h3>
+    <p>
+      Una vez realizado el diseño, y dado el ok por parte del cliente, no podremos añadir o
+      eliminar elementos del collage. La ilustración y/o collage se enviará por email para
+      confirmar que todo esté bien antes de enviarla en alta calidad e imprimirla en caso de
+      haber elegido opción de envío físico (bajo coste adicional).
+    </p>
+
+    <h3>Cambios y devoluciones</h3>
+    <p>
+      No se admiten reembolsos ni cambios en los productos personalizados, ya sean
+      ilustraciones, collages, invitaciones o acuarelas. Antes de enviar el archivo final se
+      enseñará el boceto para poder modificar lo que se necesite, pero una vez finalizado no
+      se aceptan cambios ni devoluciones. Si el cliente quiere hacer modificaciones, tendría
+      que encargar el diseño de nuevo.
+    </p>
+  </section>
+
+<script src="script.js"></script>
+<script type="module" src="mostrar-reseñas.js"></script>
+
+</main>
+<footer>
+
+    <!-- Redes sociales centradas -->
+   <div class="footer-social">
+    <p>Síguenos en nuestras redes sociales:</p>
+      <a href="https://instagram.com/ilustracioncreativa" target="_blank">
+        <!-- Instagram SVG -->
+       <img src="lineal/insta.png" alt="Logo ilustración creativa" class="redes">
+      </a>
+
+      <a href="https://facebook.com/Ilustracioncreativaa" target="_blank" >
+        <!-- Facebook SVG -->
+        <img src="lineal/face.png" alt="Logo ilustración creativa" class="redes" >
+      </a>
+    </div>
+  </div>
+  <br>
+ <div class="footer-container">
+    <!-- Links legales a la izquierda -->
+    <div class="footer-links">
+      <a href="envios.html">Envíos y devoluciones</a>
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="aviso.html">Aviso legal</a>
+    </div>
+  <!-- Derechos reservados -->
+  <div class="footer-copy">
+    &copy; 2025 @ilustracioncreativa - Todos los derechos reservados.
+  </div>
+</footer>
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+
+
+</body>
+</html>

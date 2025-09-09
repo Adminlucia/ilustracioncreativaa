@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ilustracioncreativa</title>
+    <link rel="icon" type="image/png" href="lineal/logo1.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+ 
+<header>
+  <div class="logo-text">
+    <a href="index.html">
+      <img src="lineal/Ilustración_sin_título (4).png" alt="Logo ilustración creativa" class="logo-image">
+    </a>
+    
+  </div>
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  <nav>
+      <ul> 
+          <li><a href="index.html"> <span class="material-symbols-outlined">home</span>Inicio</a></li>
+          <li class="dropdown">
+              <a href="#">Servicios y Productos<span class="material-symbols-outlined">stat_minus_1</span></a>
+              <ul class="dropdown-menu">
+                  <li class="submenu">
+                      <a href="#"><span class="material-symbols-outlined">chevron_backward </span>  Ilustraciones</a>
+                      <ul class="dropdown-submenu">
+                          <li><a href="ilustracionespersonalizadas.html">Ilustraciones <br>personalizadas</a></li>
+                          <li><a href="marcasitios.html">Marcasitios eventos</a></li>
+                          <li><a href="ilustracioneslineales.html">Ilustraciones lineales</a></li>
+                      </ul>
+                  </li>
+                  <li class="submenu">
+                      <a href="#"> <span class="material-symbols-outlined">chevron_backward </span>  Collages</a> 
+                      <ul class="dropdown-submenu">
+                          <li><a href="collagespersonalizados.html">Collages <br>Personalizados</a></li>
+                          <li><a href="collagescreativos.html">Collages Creativos</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="arteenvivo.html">Arte en Vivo</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html"> <span class="material-symbols-outlined">transcribe</span>  Contacto</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+<!-- PRODUCTO CON LUPA-->
+<div class="product-section">
+  <div class="product-gallery">
+    <!-- Columna de miniaturas -->
+    <div class="thumbnails">
+      <img src="lineal/comprimidas/image8.jpeg" class="thumb active" alt="Producto 1">
+      <img src="lineal/comprimidas/IMG_0207.jpg" class="thumb" alt="Producto 2">
+      <img src="lineal/comprimidas/image6.jpeg" class="thumb" alt="Producto 2">
+      <img src="lineal/comprimidas/image4.jpeg" class="thumb" alt="Producto 2">
+      <img src="lineal/comprimidas/IMG_0165.jpg" class="thumb" alt="Producto 2">
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="main-view">
+      <img id="main-image" src="lineal/comprimidas/image8.jpeg"Imagen principal>
+      <div id="zoom-lens"></div>
+    </div>
+  </div>
+
+ <!-- Columna derecha: descripción y características -->
+    <div class="product-right">
+        <h1 class="product-title">Ilustraciones personalizadas</h1>
+        <p>
+          Las ilustraciones personalizadas son obras visuales únicas y a medida,
+creadas a partir de las ideas y preferencias específicas de un cliente para un proyecto o regalo
+particular, diferenciándose de las imágenes genéricas de los bancos de imágenes. Estas
+ilustraciones capturan detalles únicos, como colores, estilo, temática o un momento especial,
+para comunicar un mensaje auténtico, ser utilizadas en branding, marketing, proyectos
+editoriales o como un recuerdo personal e inigualable.
+        </p>
+
+        <h2 class="product-features-title">Características del producto</h2>
+        <ul class="product-features">
+            <li>Hecho a mano</li>
+            <li>Material de alta calidad</li>
+            <li>Entrega personalizada</li>
+            <li>Diseño único y exclusivo</li>
+            <li>Opciones de tamaño disponibles</li>
+        </ul>
+        <a href="contacto.html" class="product-contact-btn">Contactar</a>
+
+    </div>
+</div>
+
+
+    
+
+    <footer>
+
+    <!-- Redes sociales centradas -->
+   <div class="footer-social">
+    <p>Síguenos en nuestras redes sociales:</p>
+      <a href="https://instagram.com/ilustracioncreativa" target="_blank">
+        <!-- Instagram SVG -->
+       <img src="lineal/insta.png" alt="Logo ilustración creativa" class="redes">
+      </a>
+
+      <a href="https://facebook.com/Ilustracioncreativaa" target="_blank" >
+        <!-- Facebook SVG -->
+        <img src="lineal/face.png" alt="Logo ilustración creativa" class="redes" >
+      </a>
+    </div>
+  </div>
+  <br>
+ <div class="footer-container">
+    <!-- Links legales a la izquierda -->
+    <div class="footer-links">
+      <a href="envios.html">Envíos y devoluciones</a>
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="aviso.html">Aviso legal</a>
+    </div>
+  <!-- Derechos reservados -->
+  <div class="footer-copy">
+    &copy; 2025 @ilustracioncreativa - Todos los derechos reservados.
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="zoom-producto.js"></script>
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

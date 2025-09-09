@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ilustracioncreativa</title>
+    <link rel="icon" type="image/png" href="lineal/logo1.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+ 
+<header>
+  <div class="logo-text">
+    <a href="index.html">
+      <img src="lineal/Ilustración_sin_título (4).png" alt="Logo ilustración creativa" class="logo-image">
+    </a>
+    
+  </div>
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  <nav>
+      <ul> 
+          <li><a href="index.html"> <span class="material-symbols-outlined">home</span>Inicio</a></li>
+          <li class="dropdown">
+              <a href="#">Servicios y Productos<span class="material-symbols-outlined">stat_minus_1</span></a>
+              <ul class="dropdown-menu">
+                  <li class="submenu">
+                      <a href="#"><span class="material-symbols-outlined">chevron_backward </span>  Ilustraciones</a>
+                      <ul class="dropdown-submenu">
+                          <li><a href="ilustracionespersonalizadas.html">Ilustraciones <br>personalizadas</a></li>
+                          <li><a href="marcasitios.html">Marcasitios eventos</a></li>
+                          <li><a href="ilustracioneslineales.html">Ilustraciones lineales</a></li>
+                      </ul>
+                  </li>
+                  <li class="submenu">
+                      <a href="#"> <span class="material-symbols-outlined">chevron_backward </span>  Collages</a> 
+                      <ul class="dropdown-submenu">
+                          <li><a href="collagespersonalizados.html">Collages <br>Personalizados</a></li>
+                          <li><a href="collagescreativos.html">Collages Creativos</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="arteenvivo.html">Arte en Vivo</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html"> <span class="material-symbols-outlined">transcribe</span>  Contacto</a></li>
+      </ul>
+  </nav>
+</header>
+
+<section class="product-section">
+  <!-- Columna izquierda: imagen -->
+  <div class="product-left">
+    <img src="lineal/comprimidas/arteenvivo.jpeg" alt="Collage creativo">
+  </div>
+
+  <!-- Columna derecha: texto -->
+  <div class="product-right">
+    <h1 class="product-title">Arte en vivo</h1>
+    <p>
+      El arte en vivo con ilustraciones digitales combina la experiencia de un artista
+creando arte en tiempo real en un evento (como una boda o conferencia) con la ventaja de la
+ilustración digital, que permite la producción de imágenes artísticas mediante dispositivos y
+software digital, como en un iPad con una tableta gráfica. El resultado son creaciones rápidas y
+personalizadas que los asistentes pueden llevarse como recuerdo físico, o se entregan en formato
+digital para su posterior distribución, ofreciendo una experiencia única y un recuerdo duradero.
+    </p>
+
+    <h2 class="product-features-title">Para consultar presupuesto, necesitamos:</h2>
+    <ul class="product-features">
+      <li>Fecha del evento</li>
+      <li>Lugar de celebración</li>
+      <li>Número de invitados</li>
+    </ul>
+
+    <a href="contacto.html" class="product-contact-btn">Contactar</a>
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+    <footer>
+
+    <!-- Redes sociales centradas -->
+   <div class="footer-social">
+    <p>Síguenos en nuestras redes sociales:</p>
+      <a href="https://instagram.com/ilustracioncreativa" target="_blank">
+        <!-- Instagram SVG -->
+       <img src="lineal/insta.png" alt="Logo ilustración creativa" class="redes">
+      </a>
+
+      <a href="https://facebook.com/Ilustracioncreativaa" target="_blank" >
+        <!-- Facebook SVG -->
+        <img src="lineal/face.png" alt="Logo ilustración creativa" class="redes" >
+      </a>
+    </div>
+  </div>
+  <br>
+ <div class="footer-container">
+    <!-- Links legales a la izquierda -->
+    <div class="footer-links">
+      <a href="envios.html">Envíos y devoluciones</a>
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="aviso.html">Aviso legal</a>
+    </div>
+  <!-- Derechos reservados -->
+  <div class="footer-copy">
+    &copy; 2025 @ilustracioncreativa - Todos los derechos reservados.
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="zoom-producto.js"></script>
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

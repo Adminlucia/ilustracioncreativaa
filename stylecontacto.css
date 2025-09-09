@@ -1,0 +1,444 @@
+/* ================= HEADER ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #fafafa;
+    color: #333;
+}
+
+/* HEADER */
+ header {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Logo+texto a la izquierda, menú a la derecha */
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+header h2 {
+    font-size: 25px;
+    color: #222;
+    margin: 0;
+}
+
+/* MENÚ PRINCIPAL */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8faa5d;
+}
+
+/* Submenú (Nivel 2) */
+.dropdown-menu {
+   
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 15;
+    list-style: none;
+    min-width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 100;
+    margin:0;
+    gap: 2px; 
+}
+.material-symbols-outlined {
+    font-size: 9px;            /* Ajusta tamaño según tu menú */
+    vertical-align: middle;     /* Alinea con el texto */
+    display: inline-block;       /* Evita afectar línea base */
+    margin-right: 2px;           /* Espacio entre icono y texto */
+
+    color: #fc9090;  /* Color rosa elegante */
+    font-variation-settings:
+        'FILL' 1,   /* 1 = relleno, 0 = contorno */
+        'wght' 700, /* Grosor */
+        'GRAD' 0,
+        'opsz' 64;  /* Tamaño óptico: ponlo igual que font-size */
+    cursor: pointer;
+    transition: color 0.3s ease;
+     position: relative;
+    
+}
+
+.material-symbols-outlined:hover {
+    color: #8faa5d; /* Color al pasar el mouse */
+}
+
+/* Dropdown Menu */
+/* Sub-submenú (Nivel 3) */
+.dropdown-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -95%; /* abre al lado derecho */
+    min-width: 200px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Enlaces dentro de submenús */
+.dropdown-menu li a, .dropdown-submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a:hover, .dropdown-submenu li a:hover {
+    background: #8faa5d;
+    color: #fff;
+}
+
+/* Mostrar submenú al hacer hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* Animación suave */
+.dropdown-menu, .dropdown-submenu {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.submenu:hover .dropdown-submenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.submenu .dropdown-submenu {
+    display: none;
+}
+
+.submenu.open .dropdown-submenu {
+    display: block;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu:hover {
+    background: #f8f8f8; /* Opcional, para visualizar */
+}
+
+.submenu:hover .dropdown-submenu {
+    display: block;
+}
+
+/* Material icons */
+.material-symbols-outlined {
+    font-size: 9px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 2px;
+    color: #fc9090;
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 64;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.material-symbols-outlined:hover {
+    color: #8faa5d;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+/*------------------------*/
+
+
+
+
+
+
+
+/* Contenedor general en dos columnas */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+     background-image: url('lineal/dibujo-ilustrador-de-vista-superior-en-el-ipad.jpg');
+              background-size: cover;       /* Cubre todo el espacio, sin deformarse */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;
+}
+
+/* Columna izquierda */
+.contact-info {
+    flex: 1;
+    background: #c4ddc9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+    color: #46a370;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #46a370;
+    font-weight: bold;
+}
+
+/* Columna derecha (formulario) */
+.form-container {
+    flex: 2;
+    background: #eba4a4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.char-count {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Botón alineado a la derecha */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 20px;
+    background: #46a370;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #36835a;
+}
+
+/* Responsive: en pantallas pequeñas se apilan */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/*Mensaje de ENVIADO*/
+.success-message {
+    background-color: #46a370; /* verde suave */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.success-message.show {
+    opacity: 1;
+}
+
+/*RESEÑAS*/
+
+.review-form-section {
+  max-width: 500px; /* ancho máximo */
+  margin: 50px auto; /* centra horizontalmente */
+  padding: 20px;
+  background: #f9f9f9; /* opcional, para destacar */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Estilo del form interno */
+#review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs y textarea */
+#review-form input,
+#review-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical; /* solo permite cambiar altura del textarea */
+}
+
+/* Botón */
+#review-form button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #8faa5d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#review-form button:hover {
+  background: #73c453;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+
+
+.review-card .stars {
+  font-size: 20px;
+  color: gold;
+  margin-top: 10px;
+}
+
+ /* Estilos para las estrellas */
+    .star-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: 5px;
+      font-size: 1.5rem;
+    }
+    .star-rating input {
+      display: none;
+    }
+    .star-rating label {
+      cursor: pointer;
+      color: #ccc;
+      transition: color 0.2s;
+    }
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: gold;
+    }

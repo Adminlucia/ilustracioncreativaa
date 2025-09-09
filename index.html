@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ilustracioncreativa</title>
+    <link rel="icon" type="image/png" href="lineal/logo1.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <!-- Loader / Popup de oferta -->
+<div id="loader">
+  <div class="loader-content">
+    <span class="close-btn" id="closeLoader">&times;</span>
+    <img src="lineal/logo1.png" alt="Logo" class="loader-logo">
+    <h2>¡Oferta Especial!</h2>
+    <p>Disfruta de un 10% descuento en tus primeros collages personalizados.</p>
+    
+  </div>
+</div>
+ 
+ 
+<header>
+  <div class="logo-text">
+    <a href="index.html">
+      <img src="lineal/Ilustración_sin_título (4).png" alt="Logo ilustración creativa" class="logo-image">
+    </a>
+    
+  </div>
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  <nav>
+      <ul> 
+          <li><a href="index.html"> <span class="material-symbols-outlined">home</span>Inicio</a></li>
+          <li class="dropdown">
+              <a href="#">Servicios y Productos<span class="material-symbols-outlined">stat_minus_1</span></a>
+              <ul class="dropdown-menu">
+                  <li class="submenu">
+                      <a href="#"><span class="material-symbols-outlined">chevron_backward </span>  Ilustraciones</a>
+                      <ul class="dropdown-submenu">
+                          <li><a href="ilustracionespersonalizadas.html">Ilustraciones <br>personalizadas</a></li>
+                          <li><a href="marcasitios.html">Marcasitios eventos</a></li>
+                          <li><a href="ilustracioneslineales.html">Ilustraciones lineales</a></li>
+                      </ul>
+                  </li>
+                  <li class="submenu">
+                      <a href="#"> <span class="material-symbols-outlined">chevron_backward </span>  Collages</a> 
+                      <ul class="dropdown-submenu">
+                          <li><a href="collagespersonalizados.html">Collages <br>Personalizados</a></li>
+                          <li><a href="collagescreativos.html">Collages Creativos</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="arteenvivo.html">Arte en Vivo</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html"> <span class="material-symbols-outlined">transcribe</span>  Contacto</a></li>
+      </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <h2>"Ilustrando lo que tú sueñas"</h2>
+    <p>Ilustraciones y collages personalizados para momentos especiales.</p>
+  </section>
+
+  <!-- SECCIÓN DE ILUSTRACIONES DESTACADAS -->
+  <section class="featured-illustrations">
+    <!-- Imagen principal fija -->
+    <div class="main-image-principal">
+      <img src="lineal/comprimidas/image6.jpeg" alt="Ilustración principal">
+    </div>
+
+    <!-- Tarjetas flip a la derecha -->
+    <div class="flip-cards">
+      <!-- Producto 1 -->
+      <div class="collage-item">
+        <div class="collage-item-inner">
+          <div class="front">
+            <img src="lineal/comprimidas/image3.jpeg" alt="Producto 1">
+            <div class="overlay"></div>
+          </div>
+          <div class="back">
+            <div class="info">
+              <h3><a href="ilustracionespersonalizadas.html" style="font-family: 'Cookie', cursive; font-size: 35px; font-weight: lighter;">
+    Su fotografía especial <br> en una ilustración
+  </a>
+</h3>
+
+              <br>
+              <p>Recreamos tu fotografía favorita<br>en un regalo personalizado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="main-image">
+        <img src="lineal/comprimidas/image8.jpeg" alt="Producto 2">
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="collage-item">
+        <div class="collage-item-inner">
+          <div class="front">
+            <img src="lineal/image7.jpeg" alt="Producto 3">
+            <div class="overlay"></div>
+          </div>
+          <div class="back">
+            <div class="info">
+              <h3>
+  <a href="collagespersonalizados.html" style="font-family: 'Cookie', cursive; font-size: 35px; font-weight: lighter;">
+    Lo original, <br>siempre conquista
+  </a>
+</h3>
+
+              <br>
+              <p>Sorprende a tu persona favorita <br>con un recuerdo personalizado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<br>
+<br>
+<br>
+
+<!-- SCRIPTS -->
+
+<section class="reviews-section">
+  <h2 class="text-rese" >Reseñas de nuestros clientes:</h2>
+  <div class="reviews-carousel">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="reviews-track" id="reviews-container">
+      <!-- Aquí se cargarán las reseñas -->
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+<script type="module" src="mostrar-reseñas.js"></script>
+
+
+<footer>
+
+    <!-- Redes sociales centradas -->
+   <div class="footer-social">
+    <p>Síguenos en nuestras redes sociales:</p>
+      <a href="https://instagram.com/ilustracioncreativa" target="_blank">
+        <!-- Instagram SVG -->
+       <img src="lineal/insta.png" alt="Logo ilustración creativa" class="redes">
+      </a>
+
+      <a href="https://facebook.com/Ilustracioncreativaa" target="_blank" >
+        <!-- Facebook SVG -->
+        <img src="lineal/face.png" alt="Logo ilustración creativa" class="redes" >
+      </a>
+    </div>
+  </div>
+  <br>
+ <div class="footer-container">
+    <!-- Links legales a la izquierda -->
+    <div class="footer-links">
+      <a href="envios.html">Envíos y devoluciones</a>
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="aviso.html">Aviso legal</a>
+    </div>
+  <!-- Derechos reservados -->
+  <div class="footer-copy">
+    &copy; 2025 @ilustracioncreativa - Todos los derechos reservados.
+  </div>
+</main>
+</footer>
+
+
+<script>
+  const minTime = 2000; // duración mínima en ms
+  const startTime = Date.now();
+  const loader = document.getElementById("loader");
+  const closeBtn = document.getElementById("closeLoader");
+  const loaderButton = document.getElementById("loaderButton");
+
+  window.addEventListener("load", () => {
+    const elapsed = Date.now() - startTime;
+    const remaining = minTime - elapsed;
+
+    setTimeout(() => {
+      // no ocultamos automáticamente, dejamos que el usuario cierre
+      loader.style.opacity = 1; // aparece
+    }, remaining > 0 ? remaining : 0);
+  });
+
+  // Cerrar popup
+  closeBtn.addEventListener("click", () => {
+    loader.style.opacity = 0;
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 600);
+  });
+
+  // Redirigir botón
+  loaderButton.addEventListener("click", () => {
+    window.location.href = "collagespersonalizados.html";
+  });
+
+
+</script>
+
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+
+</body>
+</html>
+
+
+
